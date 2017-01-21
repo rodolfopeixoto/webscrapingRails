@@ -1,9 +1,10 @@
 class Scrape
-  attr_accessor :title, :content
+  attr_accessor :title, :content, :link
 
-  def initialize(title, content)
-    @title   = title
-    @content = content
+  def initialize(title, content, link)
+    @title     = title
+    @content   = content
+    @link      = link
   end
 
 end

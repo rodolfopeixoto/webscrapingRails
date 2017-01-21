@@ -1,11 +1,10 @@
-<h1>UENF TITLE</h1>
-
 <div class="container">
   <div class="row">
       <% @scrape_array_class.each do |c| %>
-        <div class="col">
-          <h3><%= c.title %></h3>
+        <div class="col s4">
+          <h5><%= c.title %></h5>
           <p><%= c.content %></p>
+          <p><%= link_to 'Ler mais', c.link %></p>
         </div>
 
      <% end %>
